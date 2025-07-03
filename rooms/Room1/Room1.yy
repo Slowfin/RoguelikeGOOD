@@ -19,6 +19,7 @@
     {"name":"inst_5D164AC8","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_65969C1F","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_7A6E18A3","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_14EDCA37","path":"rooms/Room1/Room1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -58,6 +59,7 @@
       ],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Glow","depth":700,"effectEnabled":true,"effectType":"_effect_glow","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v2","%Name":"inst_7A6E18A3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7A6E18A3","objectId":{"name":"objPortal","path":"objects/objPortal/objPortal.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1312.0,"y":704.0,},
+        {"$GMRInstance":"v2","%Name":"inst_14EDCA37","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_14EDCA37","objectId":{"name":"objRifle","path":"objects/objRifle/objRifle.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1312.0,"y":736.0,},
       ],"layers":[],"name":"Glow","properties":[
         {"name":"g_GlowRadius","type":0,"value":"545",},
         {"name":"g_GlowQuality","type":0,"value":"5",},

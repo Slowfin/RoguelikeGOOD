@@ -109,6 +109,7 @@
     {"id":{"name":"objPlayerUI","path":"objects/objPlayerUI/objPlayerUI.yy",},},
     {"id":{"name":"objPortal","path":"objects/objPortal/objPortal.yy",},},
     {"id":{"name":"objPowerupRoom","path":"objects/objPowerupRoom/objPowerupRoom.yy",},},
+    {"id":{"name":"objRifle","path":"objects/objRifle/objRifle.yy",},},
     {"id":{"name":"objRoomGenerator","path":"objects/objRoomGenerator/objRoomGenerator.yy",},},
     {"id":{"name":"objRoomLimit","path":"objects/objRoomLimit/objRoomLimit.yy",},},
     {"id":{"name":"objRoomTypePar","path":"objects/objRoomTypePar/objRoomTypePar.yy",},},
