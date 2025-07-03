@@ -13,6 +13,8 @@ sp = 1
 path = path_add() 
 coinDrop = 0
 
+onFire = 0
+
 	statX = x
 	statY = y
 

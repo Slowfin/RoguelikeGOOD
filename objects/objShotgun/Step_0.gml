@@ -7,8 +7,9 @@ if inInventory {
 	if objPlayer.state = statesPlayer.dead or objPlayer.state = statesPlayer.teleport {
 		isActive = false	
 	} else if objPlayer.curSlot = gun {
-		isActive = false	
+		isActive = true	
 	}
+
 	
 	if objPlayer.firstSlot != gun and objPlayer.secondSlot != gun {
 	inInventory = false	
@@ -62,6 +63,13 @@ global.shakePower = 1
 		gun = "shotgun"
 		direction = mouseDirSelf - 15 + i
 		image_angle = direction 
+		randomize()
+		var fireRandom = irandom_range(1,5)
+		if objPlayer.fireChanse >= fireRandom {
+			fire = true	
+		} else {
+			fire = false
+		}
 	} }
 bullets -= 1
 audio_play_sound(sndGunshotgun,1,false,1,0,random_range(0.9,1.1))

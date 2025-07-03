@@ -1,3 +1,4 @@
+fire = false
 gun = objPlayer.curGun
 
 if gun != objPlayer.curGun {
@@ -14,7 +15,10 @@ damage = objShotgun.damage
 	instance_destroy()	
 }
 
-
 if collision_line(x,y,objPlayer.x,objPlayer.y,objWall,false,true) {
 instance_destroy()	
+}
+
+if fire {
+	image_blend = c_orange	
 }

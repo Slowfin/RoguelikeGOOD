@@ -3,6 +3,11 @@
 function scrMadNotDead(){
 	
 	if place_meeting(x,y,objBulletPar) {
+	with objBulletPar if place_meeting(x,y,objMadEnemy) and fire {
+	other.damageGot += global.fireDamage 
+	other.onFire = 3
+	other.alarm[3] = 60	
+	}
 	with objBulletPar if place_meeting(x,y,objMadEnemy) {
 	instance_destroy()	
 	other.damageGot += damage

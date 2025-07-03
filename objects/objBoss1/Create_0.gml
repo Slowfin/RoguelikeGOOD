@@ -37,6 +37,8 @@ canHurt = true
 
 coinDrop = irandom_range(30,50)
 
+onFire = 0
+
 whiteX = 100
 
 spIdle = sprBoss

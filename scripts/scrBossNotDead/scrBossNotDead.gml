@@ -2,7 +2,12 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377
 function scrBossNotDead(){
 	
-	if place_meeting(x,y,objBulletPar) and canHurt{
+	if place_meeting(x,y,objBulletPar) and canHurt {
+	with objBulletPar if place_meeting(x,y,objBoss1) and fire {
+	other.damageGot += global.fireDamage 
+	other.onFire = 3
+	other.alarm[5] = 60	
+	}
 	with objBulletPar if place_meeting(x,y,objBoss1) {
 	instance_destroy()	
 	other.damageGot += damage
@@ -11,7 +16,7 @@ function scrBossNotDead(){
 	noDamage = 0
 	white = true
 	alarm[0] = 5
-	yoffset = 15
+	yoffset = 30
 	audio_play_sound(sndHit,1,false,1,0,random_range(0.8,1.2))
 	statX = x
 	statY = y
@@ -40,12 +45,14 @@ if noDamage >= 60 {
 
 if white {
 	image_blend = c_red	
+} else if onFire {
+	image_blend = c_orange
 } else {
 	image_blend = c_white	
 }
 
-if yoffset != 25 {
-yoffset = lerp(yoffset,25,0.1)	
+if yoffset != 40 {
+yoffset = lerp(yoffset,40,0.1)	
 }
 
 if HP <= 0 {

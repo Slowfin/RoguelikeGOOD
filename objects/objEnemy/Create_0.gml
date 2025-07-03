@@ -13,6 +13,9 @@ sp = 0.8
 path = path_add() 
 coinDrop = irandom_range(3,5)
 
+onFire = 0
+
+
 	statX = x
 	statY = y
 

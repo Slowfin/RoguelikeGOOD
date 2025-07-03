@@ -17,3 +17,5 @@ shop = false
 outline = false
 cost = 40 + irandom_range(-3,3)
 fly = 0
+
+fire = false

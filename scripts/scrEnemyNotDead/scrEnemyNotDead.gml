@@ -3,11 +3,17 @@
 function scrEnemyNotDead(){
 	
 	if place_meeting(x,y,objBulletPar) {
+	with objBulletPar if place_meeting(x,y,objEnemy) and fire {
+	other.damageGot += global.fireDamage 
+	other.onFire = 3
+	other.alarm[3] = 60	
+	}
 	with objBulletPar if place_meeting(x,y,objEnemy) {
 	instance_destroy()	
 	other.damageGot += damage
 	other.HP -= damage
 	}
+
 	noDamage = 0
 	white = true
 	alarm[0] = 5
@@ -15,7 +21,6 @@ function scrEnemyNotDead(){
 	audio_play_sound(sndHit,1,false,1,0,random_range(0.8,1.2))
 	statX = x
 	statY = y
-	
 	}
 	
 	if place_meeting(x,y,objPlayer) and objPlayer.hurtTime <= 0 {
@@ -41,6 +46,8 @@ if noDamage >= 60 {
 
 if white {
 	image_blend = c_red	
+} else if onFire {
+	image_blend = c_orange
 } else {
 	image_blend = c_white	
 }
@@ -64,6 +71,8 @@ if HP <= 0 {
 
 // depth
 depth = -bbox_bottom
+
+
 
 
 }

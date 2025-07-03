@@ -7,8 +7,9 @@ if inInventory {
 	if objPlayer.state = statesPlayer.dead or objPlayer.state = statesPlayer.teleport {
 		isActive = false	
 	} else if objPlayer.curSlot = gun {
-		isActive = false	
+		isActive = true	
 	}
+
 
 if objPlayer.firstSlot != gun and objPlayer.secondSlot != gun {
 	inInventory = false	
@@ -56,6 +57,13 @@ objCamera.alarm[0] = 5
 global.shakePower = 0.5
 	with instance_create_layer(x + lengthdir_x(8,mouseDir),y + lengthdir_y(8,mouseDir),"Bullets",objPistolBullet) {
 		gun = "pistol"
+		randomize()
+		var fireRandom = irandom_range(1,5)
+		if objPlayer.fireChanse >= fireRandom {
+			fire = true	
+		} else {
+			fire = false
+		}
 	}
 bullets -= 1
 shootKnockback = 2

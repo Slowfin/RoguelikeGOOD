@@ -16,3 +16,4 @@ numb = random_range(0,10)
 shop = false
 outline = false
 fly = 0
+

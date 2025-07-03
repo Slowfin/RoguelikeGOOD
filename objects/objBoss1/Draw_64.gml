@@ -21,3 +21,4 @@ draw_rectangle(whiteX,bar_y,bar_x+curBar_length,bar_y+bar_height, false)
 draw_set_color(c_orange)
 draw_rectangle(bar_x,bar_y,bar_x+curBar_length,bar_y+bar_height, false)
 
+

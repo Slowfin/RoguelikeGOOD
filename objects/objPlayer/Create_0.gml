@@ -46,6 +46,10 @@ rotateTp = -5
 global.cantChange = 0
 
 // stats
+// шанс на огненные пули
+fireChanse = 0
+// урон от огня
+global.fireDamage = 3
 // скорость пуль
 bulletSpeed = 1
 // скорость стрельбы
