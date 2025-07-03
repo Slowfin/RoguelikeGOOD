@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scrUpdateGrid",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrUpdateGrid",
+  "parent":{
+    "name":"Скрипты",
+    "path":"folders/Скрипты.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

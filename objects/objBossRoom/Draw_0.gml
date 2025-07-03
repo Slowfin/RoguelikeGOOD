@@ -1,0 +1,1 @@
+draw_sprite_stretched(sprRoomBoss,-1,x+16,y+16,320-32,176-32)

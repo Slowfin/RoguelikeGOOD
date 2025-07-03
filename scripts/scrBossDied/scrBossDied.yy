@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scrBossDied",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrBossDied",
+  "parent":{
+    "name":"Boss1",
+    "path":"folders/Скрипты/Enemy/Boss1.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

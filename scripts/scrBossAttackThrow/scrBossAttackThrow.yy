@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scrBossAttackThrow",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrBossAttackThrow",
+  "parent":{
+    "name":"Boss1",
+    "path":"folders/Скрипты/Enemy/Boss1.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

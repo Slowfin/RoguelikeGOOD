@@ -1,0 +1,1 @@
+inInventory = false

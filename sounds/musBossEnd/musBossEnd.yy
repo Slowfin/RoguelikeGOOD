@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"musBossEnd",
+  "audioGroupId":{
+    "name":"Music",
+    "path":"audiogroups/Music",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":2.7745578,
+  "name":"musBossEnd",
+  "parent":{
+    "name":"Звуки",
+    "path":"folders/Звуки.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"musBossEnd.ogg",
+  "type":1,
+  "volume":1.0,
+}

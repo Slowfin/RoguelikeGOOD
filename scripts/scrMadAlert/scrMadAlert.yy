@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scrMadAlert",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrMadAlert",
+  "parent":{
+    "name":"Mad",
+    "path":"folders/Скрипты/Enemy/Mad.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

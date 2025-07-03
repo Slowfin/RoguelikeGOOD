@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scrEnemyIdle",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrEnemyIdle",
+  "parent":{
+    "name":"States",
+    "path":"folders/Скрипты/Enemy/Basic/States.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

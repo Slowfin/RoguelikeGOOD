@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scrPlayerAlive",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrPlayerAlive",
+  "parent":{
+    "name":"Player",
+    "path":"folders/Скрипты/Player.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

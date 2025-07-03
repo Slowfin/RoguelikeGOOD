@@ -1,0 +1,31 @@
+if place_meeting(x,y,objBulletPar) {
+	with objBulletPar if place_meeting(x,y,objDummy) {
+	instance_destroy()	
+	other.damageGot += damage
+	}
+	noDamage = 0
+	white = true
+	alarm[0] = 5
+	yoffset = 15
+	audio_play_sound(sndHit,1,false,1,0,random_range(0.8,1.2))
+	statX = x
+	statY = y
+}
+
+if !place_meeting(x,y,objBulletPar) and noDamage < 60 {
+	noDamage += 1 
+}
+
+if noDamage >= 60 {
+	damageGot = 0
+}
+
+if white {
+	image_blend = c_red	
+} else {
+	image_blend = c_white	
+}
+
+if yoffset != 25 {
+yoffset = lerp(yoffset,25,0.1)	
+}

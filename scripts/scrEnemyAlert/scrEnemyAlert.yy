@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scrEnemyAlert",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrEnemyAlert",
+  "parent":{
+    "name":"States",
+    "path":"folders/Скрипты/Enemy/Basic/States.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

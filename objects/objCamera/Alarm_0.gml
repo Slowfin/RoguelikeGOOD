@@ -1,0 +1,1 @@
+global.shakePower = 0

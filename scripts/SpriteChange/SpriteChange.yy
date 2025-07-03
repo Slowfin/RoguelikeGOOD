@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"SpriteChange",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"SpriteChange",
+  "parent":{
+    "name":"Скрипты",
+    "path":"folders/Скрипты.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

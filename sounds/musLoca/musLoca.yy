@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"musLoca",
+  "audioGroupId":{
+    "name":"Music",
+    "path":"audiogroups/Music",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":176.44257,
+  "name":"musLoca",
+  "parent":{
+    "name":"Звуки",
+    "path":"folders/Звуки.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"musLoca.ogg",
+  "type":1,
+  "volume":0.54,
+}

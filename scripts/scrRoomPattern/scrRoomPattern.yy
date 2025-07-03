@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scrRoomPattern",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrRoomPattern",
+  "parent":{
+    "name":"Скрипты",
+    "path":"folders/Скрипты.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

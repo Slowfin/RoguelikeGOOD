@@ -1,0 +1,27 @@
+randomize()
+speed = random_range(1.5,2.5)
+image_angle = direction
+alarm[0] = 180
+damage = 1
+
+if global.area == "grey" {
+	sprite_index = sprBoss1bullet
+}
+if global.area == "green" {
+	sprite_index = sprBoss1bulletGreen
+}
+if global.area == "desert" {
+	sprite_index = sprBoss1bulletDesert
+}
+
+image_xscale = choose(-1,1)
+image_yscale = choose(-1,1)
+image_index = random(image_number)
+
+
+
+//var dir = point_direction(x,y,objPlayer.x,objPlayer.y)
+//while place_meeting(x,y,objWall) {
+//	x += lengthdir_x(1,dir)	
+//	y += lengthdir_y(1,dir)	
+//}

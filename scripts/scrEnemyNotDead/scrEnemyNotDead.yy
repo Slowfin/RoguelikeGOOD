@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scrEnemyNotDead",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrEnemyNotDead",
+  "parent":{
+    "name":"Basic",
+    "path":"folders/Скрипты/Enemy/Basic.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
