@@ -29,13 +29,11 @@ function scrBossAlert(){
 
 	attackDelay -= 1
 	
-	if !collision_line(x,y,objPlayer.x,objPlayer.y,objWall,false,true) and attackDelay <= 0 {
+	if attackDelay <= 0 {
 		attackDelay = attackTimer	
 		attack = 0
 		state = choose(statesBoss1.attack1,statesBoss1.attack2)
 		image_index = 0
-	} else if collision_line(x,y,objPlayer.x,objPlayer.y,objWall,false,true) and attackDelay <= 0 {
-		attackDelay = 10	
-	}
+	} 
 
 }

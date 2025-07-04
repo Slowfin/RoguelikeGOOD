@@ -43,6 +43,8 @@ exploded = false
 
 rotateTp = -5
 
+wallhack = false
+
 global.cantChange = 0
 
 // stats

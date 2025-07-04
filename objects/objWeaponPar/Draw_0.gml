@@ -18,5 +18,5 @@ draw_sprite_ext(sprite_index,image_index,x,y+fly,image_xscale,image_yscale,image
 
 if shop and outline {
 	draw_set_color(c_yellow)
-	draw_text_transformed(x,y-20,cost,1,1,0)	
+	draw_text_transformed(x-5,y-20,cost,1,1,0)	
 }

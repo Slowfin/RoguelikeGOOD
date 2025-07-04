@@ -45,6 +45,8 @@ if noDamage >= 60 {
 
 if white {
 	image_blend = c_red	
+} else if onFire {
+	image_blend = c_orange
 } else {
 	image_blend = c_white	
 }

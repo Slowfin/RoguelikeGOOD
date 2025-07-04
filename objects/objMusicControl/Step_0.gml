@@ -22,7 +22,21 @@ if keyboard_check_pressed(ord("L")) {
 
 
 if global.music = "Area" {
-	musicToPlay = musLoca
+	if global.area = "test" {
+		audio_stop_sound(musAreaWest)
+		audio_stop_sound(musAreaJungle)
+		musicToPlay = musArea
+	}
+	if global.area = "desert" {
+		audio_stop_sound(musArea)
+		audio_stop_sound(musAreaJungle)
+		musicToPlay = musAreaWest
+	}
+	if global.area = "green" {
+		audio_stop_sound(musArea)
+		audio_stop_sound(musAreaWest)
+		musicToPlay = musAreaJungle
+	}
 }
 if global.music = "Boss" {
 	musicToPlay = musBoss
@@ -33,6 +47,8 @@ if global.music = "BossEnd" {
 if global.music = "Shop" {
 	musicToPlay = musShop
 }
+
+
 
 
 
@@ -54,7 +70,9 @@ if global.music = "Area" {
 }
 if global.music = "Boss" {
 	if !audio_is_playing(musicToPlay) {
-		audio_pause_sound(musLoca)
+		audio_pause_sound(musAreaJungle)
+		audio_pause_sound(musAreaWest)
+		audio_pause_sound(musArea)
 		audio_stop_sound(musBossEnd)
 		audio_stop_sound(musShop)
 		audio_play_sound(musicToPlay,1,true)
@@ -65,7 +83,9 @@ if global.music = "Boss" {
 }
 if global.music = "BossEnd" {
 	if !audio_is_playing(musicToPlay) {
-		audio_pause_sound(musLoca)
+		audio_pause_sound(musAreaJungle)
+		audio_pause_sound(musAreaWest)
+		audio_pause_sound(musArea)
 		audio_stop_sound(musBoss)
 		audio_stop_sound(musShop)
 		audio_play_sound(musicToPlay,1,false)
@@ -74,7 +94,9 @@ if global.music = "BossEnd" {
 }
 if global.music = "Shop" {
 	if !audio_is_playing(musicToPlay) {
-		audio_pause_sound(musLoca)
+		audio_pause_sound(musAreaJungle)
+		audio_pause_sound(musAreaWest)
+		audio_pause_sound(musArea)
 		audio_stop_sound(musBossEnd)
 		audio_stop_sound(musBoss)
 		audio_play_sound(musicToPlay,1,true)
@@ -84,7 +106,9 @@ if global.music = "Shop" {
 	}	
 }
 if global.music = noone {
-	audio_pause_sound(musLoca)
+	audio_pause_sound(musAreaJungle)
+	audio_pause_sound(musAreaWest)
+	audio_pause_sound(musArea)
 	audio_stop_sound(musBoss)
 	audio_stop_sound(musBossEnd)
 	audio_stop_sound(musShop)

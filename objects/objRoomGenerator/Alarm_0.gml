@@ -59,5 +59,5 @@
 	objCamera.x = 1120
 	objCamera.y = 635
 	camera_set_view_pos(view_camera[0],1120,635)
-	audio_stop_sound(musLoca)
+	audio_stop_sound(musArea)
 	global.music = "Area"
