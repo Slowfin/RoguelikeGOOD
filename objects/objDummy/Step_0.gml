@@ -1,15 +1,19 @@
 if place_meeting(x,y,objBulletPar) {
-	with objBulletPar if place_meeting(x,y,objDummy) {
+	with objBulletPar if place_meeting(x,y,objDummy) if canHit {		
+	if object_index != objHotdogPluh {
 	instance_destroy()	
+		}	
 	other.damageGot += damage
-	}
-	noDamage = 0
-	white = true
-	alarm[0] = 5
-	yoffset = 15
+	other.HP -= damage
+	other.noDamage = 0
+	other.white = true
+	other.alarm[0] = 5
+	other.yoffset = 15
 	audio_play_sound(sndHit,1,false,1,0,random_range(0.8,1.2))
-	statX = x
-	statY = y
+	other.statX = x
+	other.statY = y
+	
+	}
 }
 
 if !place_meeting(x,y,objBulletPar) and noDamage < 60 {

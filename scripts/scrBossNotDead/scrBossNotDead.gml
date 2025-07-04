@@ -3,23 +3,26 @@
 function scrBossNotDead(){
 	
 	if place_meeting(x,y,objBulletPar) and canHurt {
-	with objBulletPar if place_meeting(x,y,objBoss1) and fire {
+	with objBulletPar if place_meeting(x,y,objBoss1) and fire and canHit {
 	other.damageGot += global.fireDamage 
 	other.onFire = 3
 	other.alarm[5] = 60	
 	}
-	with objBulletPar if place_meeting(x,y,objBoss1) {
+	with objBulletPar if place_meeting(x,y,objBoss1) and canHit {
+		if object_index != objHotdogPluh {
 	instance_destroy()	
+		}
 	other.damageGot += damage
 	other.HP -= damage
-	}
-	noDamage = 0
-	white = true
-	alarm[0] = 5
-	yoffset = 30
+	other.noDamage = 0
+	other.white = true
+	other.alarm[0] = 5
+	other.yoffset = 15
 	audio_play_sound(sndHit,1,false,1,0,random_range(0.8,1.2))
-	statX = x
-	statY = y
+	other.statX = x
+	other.statY = y
+	}
+	
 }
 
 	if place_meeting(x,y,objPlayer) and objPlayer.hurtTime <= 0 and canHurt {

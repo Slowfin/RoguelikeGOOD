@@ -8,10 +8,7 @@ function scrMadIdle(){
 	
 	sprite_index = sprMadEnemy
 	
-	if distance_to_object(objPlayer) <= alertDis and objPlayer.state != statesPlayer.dead
-	and !collision_line(x,y,objPlayer.x,objPlayer.y,objWall,false,true)
-	and !collision_line(x,y,objPlayer.x,objPlayer.y,objDoorHor,false,true)
-	and !collision_line(x,y,objPlayer.x,objPlayer.y,objDoorVert,false,true){
+	if distance_to_object(objPlayer) <= alertDis and objPlayer.state != statesPlayer.dead {
 	alert = true
 	state = statesMad.alert
 }  else {

@@ -3,24 +3,26 @@
 function scrEnemyNotDead(){
 	
 	if place_meeting(x,y,objBulletPar) {
-	with objBulletPar if place_meeting(x,y,objEnemy) and fire {
+	with objBulletPar if place_meeting(x,y,objEnemy) and fire and canHit {
 	other.damageGot += global.fireDamage 
 	other.onFire = 3
 	other.alarm[3] = 60	
 	}
-	with objBulletPar if place_meeting(x,y,objEnemy) {
+	with objBulletPar if place_meeting(x,y,objEnemy) and canHit {
+	if object_index != objHotdogPluh {
 	instance_destroy()	
+		}
 	other.damageGot += damage
 	other.HP -= damage
+	other.noDamage = 0
+	other.white = true
+	other.alarm[0] = 5
+	other.yoffset = 15
+	audio_play_sound(sndHit,1,false,1,0,random_range(0.8,1.2))
+	other.statX = x
+	other.statY = y
 	}
 
-	noDamage = 0
-	white = true
-	alarm[0] = 5
-	yoffset = 15
-	audio_play_sound(sndHit,1,false,1,0,random_range(0.8,1.2))
-	statX = x
-	statY = y
 	}
 	
 	if place_meeting(x,y,objPlayer) and objPlayer.hurtTime <= 0 {

@@ -22,6 +22,8 @@ if randomItem == 7 {
 	randomItem = objLighter }
 if randomItem == 8 {
 	randomItem = objBelt }
+if randomItem == 9 {
+	randomItem = objHotdog }
 		
 		
 }

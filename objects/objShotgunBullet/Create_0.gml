@@ -1,5 +1,6 @@
 fire = false
 gun = objPlayer.curGun
+canHit = true
 
 if gun != objPlayer.curGun {
 instance_destroy()	

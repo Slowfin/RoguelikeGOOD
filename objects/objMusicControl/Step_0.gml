@@ -39,7 +39,14 @@ if global.music = "Area" {
 	}
 }
 if global.music = "Boss" {
-	musicToPlay = musBoss
+	if global.area = "grey" {
+		audio_stop_sound(musBossDesert)
+		musicToPlay = musBoss
+	}
+	if global.area = "desert" {
+		audio_stop_sound(musBoss)
+		musicToPlay = musBossDesert
+	}
 }
 if global.music = "BossEnd" {
 	musicToPlay = musBossEnd
@@ -55,6 +62,7 @@ if global.music = "Shop" {
 if global.music = "Area" {
 	if !audio_is_playing(musicToPlay)  {
 		audio_stop_sound(musBoss)
+		audio_stop_sound(musBossDesert)
 		audio_stop_sound(musBossEnd)
 		audio_stop_sound(musShop)
 		if global.bossDefeated == false {
@@ -64,6 +72,7 @@ if global.music = "Area" {
 	if audio_is_paused(musicToPlay) {
 		audio_resume_sound(musicToPlay)
 		audio_stop_sound(musBoss)
+		audio_stop_sound(musBossDesert)
 		audio_stop_sound(musBossEnd)
 		audio_stop_sound(musShop)
 	}	
@@ -87,6 +96,7 @@ if global.music = "BossEnd" {
 		audio_pause_sound(musAreaWest)
 		audio_pause_sound(musArea)
 		audio_stop_sound(musBoss)
+		audio_stop_sound(musBossDesert)
 		audio_stop_sound(musShop)
 		audio_play_sound(musicToPlay,1,false)
 		alarm[0] = 166
@@ -99,6 +109,7 @@ if global.music = "Shop" {
 		audio_pause_sound(musArea)
 		audio_stop_sound(musBossEnd)
 		audio_stop_sound(musBoss)
+		audio_stop_sound(musBossDesert)
 		audio_play_sound(musicToPlay,1,true)
 	}	
 	if audio_is_paused(musicToPlay) {
@@ -110,6 +121,7 @@ if global.music = noone {
 	audio_pause_sound(musAreaWest)
 	audio_pause_sound(musArea)
 	audio_stop_sound(musBoss)
+	audio_stop_sound(musBossDesert)
 	audio_stop_sound(musBossEnd)
 	audio_stop_sound(musShop)
 }

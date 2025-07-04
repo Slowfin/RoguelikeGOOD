@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":-1.0,
+  "duration":192.0,
   "name":"musAreaJungle",
   "parent":{
     "name":"Звуки",
