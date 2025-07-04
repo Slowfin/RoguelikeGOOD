@@ -11,3 +11,5 @@ image_alpha = 0
 
 Go = false
 
+instance_create_layer(x,y,"TopNoUI",objYouDied)
+

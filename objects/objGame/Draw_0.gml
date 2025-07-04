@@ -14,3 +14,5 @@ draw_text_transformed(camX + 270 + choose(-shakeX,shakeX),camY + 150 + choose(-s
 if keyboard_check(vk_alt) {
 	mp_grid_draw(global.mp_grid)	
 }
+
+

@@ -1,4 +1,4 @@
-if keyboard_check_pressed(vk_space) {
+if keyboard_check_pressed(vk_f1) {
 	with objWall {
 	instance_destroy()	
 	}

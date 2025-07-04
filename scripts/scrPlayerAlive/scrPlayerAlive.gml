@@ -84,7 +84,6 @@ depth = -bbox_bottom
 	
 	if HP <= 0 or keyboard_check_pressed(ord("M")) {
 		state = statesPlayer.dead	
-		instance_create_layer(x,y,"Game",objPressSpace)
 	}
 
 

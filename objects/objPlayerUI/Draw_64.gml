@@ -10,6 +10,7 @@ var health_percent = objPlayer.HP / objPlayer.MaxHP
 
 var curBar_length = bar_length * health_percent
 
+draw_set_alpha(1)
 draw_set_color(c_black)
 draw_rectangle(bar_x-bar_outline,bar_y-bar_outline,bar_x+bar_length+bar_outline,bar_y+bar_height+bar_outline, false)
                  
@@ -23,6 +24,10 @@ draw_rectangle(bar_x,bar_y,bar_x+curBar_length,bar_y+bar_height, false)
 
 draw_set_color(c_black)
 draw_text_transformed(bar_length + bar_x + 23 , bar_height + bar_y-40,objPlayer.HP,3,3,0)
+draw_text_transformed(bar_length + bar_x + 23 , bar_height + bar_y-37,objPlayer.HP,3,3,0)
+draw_text_transformed(bar_length + bar_x + 20 , bar_height + bar_y-40,objPlayer.HP,3,3,0)
+draw_text_transformed(bar_length + bar_x + 20 , bar_height + bar_y-34,objPlayer.HP,3,3,0)
+draw_text_transformed(bar_length + bar_x + 17 , bar_height + bar_y-37,objPlayer.HP,3,3,0)
 draw_text_transformed(bar_length + bar_x + 23 , bar_height + bar_y-34,objPlayer.HP,3,3,0)
 draw_text_transformed(bar_length + bar_x + 17 , bar_height + bar_y-40,objPlayer.HP,3,3,0)
 draw_text_transformed(bar_length + bar_x + 17 , bar_height + bar_y-34,objPlayer.HP,3,3,0)
@@ -30,5 +35,18 @@ draw_text_transformed(bar_length + bar_x + 17 , bar_height + bar_y-34,objPlayer.
 draw_set_color(c_red)
 draw_text_transformed(bar_length + bar_x + 20 , bar_height + bar_y-37,objPlayer.HP,3,3,0)
 
+
+draw_set_color(c_black)
+draw_text_transformed(47,bar_height+67, "деньги: "+string(objPlayer.money),3,3,0)
+draw_text_transformed(50,bar_height+67, "деньги: "+string(objPlayer.money),3,3,0)
+draw_text_transformed(53,bar_height+67, "деньги: "+string(objPlayer.money),3,3,0)
+draw_text_transformed(53,bar_height+70, "деньги: "+string(objPlayer.money),3,3,0)
+draw_text_transformed(53,bar_height+73, "деньги: "+string(objPlayer.money),3,3,0)
+draw_text_transformed(50,bar_height+73, "деньги: "+string(objPlayer.money),3,3,0)
+draw_text_transformed(47,bar_height+73, "деньги: "+string(objPlayer.money),3,3,0)
+draw_text_transformed(47,bar_height+70, "деньги: "+string(objPlayer.money),3,3,0)
+
 draw_set_color(c_yellow)
-draw_text_transformed(bar_length,bar_height+70,objPlayer.money,3,3,0)
+draw_text_transformed(50,bar_height+70, "деньги: "+string(objPlayer.money),3,3,0)
+
+

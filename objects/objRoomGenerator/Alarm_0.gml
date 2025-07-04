@@ -1,3 +1,5 @@
+	objPlayer.x = 1280
+	objPlayer.y = 728
 	with objWall {
 	instance_destroy()	
 	}
@@ -53,8 +55,6 @@
 	objPlayer.image_xscale = 1
 	objPlayer.image_yscale = 1
 	objPlayer.image_angle = 0
-	objPlayer.x = 1280
-	objPlayer.y = 728
 	global.floor += 1
 	objPlayer.rotateTp = -5
 	objCamera.x = 1120

@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprFireBullets",
-    "path":"sprites/sprFireBullets/sprFireBullets.yy",
+    "name":"sprLighter",
+    "path":"sprites/sprLighter/sprLighter.yy",
   },
   "spriteMaskId":null,
   "visible":true,

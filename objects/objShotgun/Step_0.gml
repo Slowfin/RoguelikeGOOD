@@ -58,8 +58,9 @@ if bullets > 0 and mouse_check_button(mb_left) and shootCd <= 0 and !reload {
 shootCd = maxShootCd / objPlayer.shootSpeed
 objCamera.alarm[0] = 5
 global.shakePower = 1
+instance_create_layer(x + lengthdir_x(17,mouseDir),y + lengthdir_y(17,mouseDir),"Glow",objBulletParticle).image_angle = image_angle
 	for (var i = 0; i < 40/objPlayer.lessSpread; i += 10/objPlayer.lessSpread) {
-		instance_create_layer(x + lengthdir_x(17,mouseDir),y + lengthdir_y(17,mouseDir),"Glow",objBulletParticle).image_angle = image_angle
+
 	with instance_create_layer(x + lengthdir_x(13,mouseDirSelf),y + lengthdir_y(13,mouseDirSelf),"Bullets",objShotgunBullet) { 
 		gun = "shotgun"
 		direction = mouseDirSelf - 15/objPlayer.lessSpread + i

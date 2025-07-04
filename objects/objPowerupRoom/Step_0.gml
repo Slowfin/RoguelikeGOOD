@@ -6,10 +6,7 @@ if place_meeting(x,y,objPlayer) and objPlayer.state != statesPlayer.dead {
 
 if place_meeting(x,y,objPlayer) and shop {
 	global.music = "Shop"	
-} 
-
-
-if place_meeting(x,y,objPlayer) and !shop  {
+} else if place_meeting(x,y,objPlayer) and !shop  {
 	if global.bossDefeated == false {
 	global.music = "Area"	 
 	}
@@ -18,5 +15,3 @@ if place_meeting(x,y,objPlayer) and !shop  {
 	}
 }
 
-if !place_meeting(x,y,objPlayer) {
-}

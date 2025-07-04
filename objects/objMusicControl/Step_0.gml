@@ -22,7 +22,7 @@ if keyboard_check_pressed(ord("L")) {
 
 
 if global.music = "Area" {
-	if global.area = "test" {
+	if global.area = "grey" {
 		audio_stop_sound(musAreaWest)
 		audio_stop_sound(musAreaJungle)
 		musicToPlay = musArea
@@ -115,7 +115,7 @@ if global.music = noone {
 }
 
 if slowMusic {
-	pitch = lerp(pitch,0.5,0.1)
+	pitch = lerp(pitch,0.5,0.05)
 } else {
 	pitch = lerp(pitch,1,0.1)
 }
