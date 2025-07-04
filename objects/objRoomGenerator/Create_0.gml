@@ -1,6 +1,6 @@
 maxRooms = 8
 rooms = 0
-maxMobRooms = irandom_range(5,7)
+maxMobRooms = irandom_range(4,5)
 mobRooms = 0
 maxPowerupRooms = maxRooms - maxMobRooms 
 powerupRooms = 0

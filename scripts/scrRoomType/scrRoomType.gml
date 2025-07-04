@@ -49,10 +49,10 @@ if rooms < maxRooms -1 {
 		if gen == false and powerupRooms < maxPowerupRooms {
 			var inst = instance_find(objMobRoom, irandom(instance_number(objMobRoom) - 1))
 			with inst {
-				instance_destroy()
 				with instance_create_layer(x,y,"RoomType",objPowerupRoom) {
 					roomX = objRoomGenerator.roomx
 					roomY = objRoomGenerator.roomy
+				instance_destroy()
 				}
 			}
 			powerupRooms++

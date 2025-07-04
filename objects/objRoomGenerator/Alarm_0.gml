@@ -30,11 +30,12 @@
 	}
 	
 	global.bossDefeated = false
+	global.music = "Area"
 	var oldArea = global.area
 	while global.area == oldArea {
 		global.area = choose("green","grey","desert")
 	}
-	maxMobRooms = irandom_range(6,7)
+	maxMobRooms = irandom_range(4,6)
 	maxPowerupRooms = maxRooms - maxMobRooms 
 	rooms = 0
 	mobRooms = 0
@@ -60,4 +61,3 @@
 	objCamera.y = 635
 	camera_set_view_pos(view_camera[0],1120,635)
 	audio_stop_sound(musArea)
-	global.music = "Area"

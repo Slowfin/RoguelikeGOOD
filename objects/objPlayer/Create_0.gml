@@ -64,4 +64,7 @@ reloadSpeed =  1
 bulletLife =  1
 // скорость персонажа
 speedMultip = 0
+//  меньше разброса
+lessSpread = 1
+// шанс крита
 

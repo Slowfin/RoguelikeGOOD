@@ -32,7 +32,7 @@ if keyboard_check_pressed(vk_space) {
 	
 	global.bossDefeated = false
 	global.area = choose("green","grey","desert")
-	maxMobRooms = irandom_range(6,7)
+	maxMobRooms = irandom_range(4,6)
 	maxPowerupRooms = maxRooms - maxMobRooms 
 	rooms = 0
 	mobRooms = 0
