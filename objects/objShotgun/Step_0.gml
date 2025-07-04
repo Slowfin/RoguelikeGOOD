@@ -20,7 +20,7 @@ if inInventory {
 }
 
 if isActive {
-	
+	fly = 0
 
 
 var mouseDir = point_direction(objPlayer.x,objPlayer.y,mouse_x,mouse_y)
@@ -59,6 +59,7 @@ shootCd = maxShootCd / objPlayer.shootSpeed
 objCamera.alarm[0] = 5
 global.shakePower = 1
 	for (var i = 0; i < 40/objPlayer.lessSpread; i += 10/objPlayer.lessSpread) {
+		instance_create_layer(x + lengthdir_x(17,mouseDir),y + lengthdir_y(17,mouseDir),"Glow",objBulletParticle).image_angle = image_angle
 	with instance_create_layer(x + lengthdir_x(13,mouseDirSelf),y + lengthdir_y(13,mouseDirSelf),"Bullets",objShotgunBullet) { 
 		gun = "shotgun"
 		direction = mouseDirSelf - 15/objPlayer.lessSpread + i

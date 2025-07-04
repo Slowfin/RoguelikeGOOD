@@ -20,6 +20,7 @@
   "height":48,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"d21b1f48-78ce-4544-b04f-a4e342086140","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"d21b1f48-78ce-4544-b04f-a4e342086140","opacity":67.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"191350a4-f1ec-407a-9250-867a0b40924d","blendMode":0,"displayName":"default","isLocked":false,"name":"191350a4-f1ec-407a-9250-867a0b40924d","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sprDoorHorBossDesert",

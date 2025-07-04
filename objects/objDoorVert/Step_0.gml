@@ -17,7 +17,7 @@ if distance_to_object(objBossRoom) <= 5 {
 
 if global.area == "grey" {
 	if bossDoor {
-	sprite_index = sprDoorVertBoss
+	sprite_index = sprDoorVert_1
 	}
 	else {
 	sprite_index = sprDoorVert	

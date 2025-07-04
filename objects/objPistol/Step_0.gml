@@ -20,6 +20,7 @@ if objPlayer.firstSlot != gun and objPlayer.secondSlot != gun {
 }
 
 if isActive == true {
+	fly = 0
 
 var mouseDir = point_direction(objPlayer.x,objPlayer.y,mouse_x,mouse_y)
 
@@ -55,6 +56,10 @@ if bullets > 0 and mouse_check_button(mb_left) and shootCd <= 0 and !reload {
 shootCd = maxShootCd / objPlayer.shootSpeed
 objCamera.alarm[0] = 5
 global.shakePower = 0.5
+with instance_create_layer(x + lengthdir_x(12,mouseDir),y + lengthdir_y(12,mouseDir),"Glow",objBulletParticle) { 
+	image_angle = other.image_angle
+	sprite_index = sprBulletParticle3
+}
 	with instance_create_layer(x + lengthdir_x(8,mouseDir),y + lengthdir_y(8,mouseDir),"Bullets",objPistolBullet) {
 		gun = "pistol"
 		randomize()
