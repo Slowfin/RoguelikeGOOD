@@ -28,5 +28,9 @@ function scrPlayerDead(){
 	
 	if exploded and keyboard_check_pressed(vk_space) {
 		game_restart()	
+		if instance_exists( objPressSpace) {
+		with objPressSpace  {
+			instance_destroy()	
+		} }
 	}
 }

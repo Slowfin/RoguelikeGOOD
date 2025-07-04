@@ -4,3 +4,9 @@ switch state {
 	case statesPlayer.cantMove: scrPlayerCantMove() break
 	case statesPlayer.teleport: scrPlayerTeleport() break
 }
+
+if state == statesPlayer.dead  {
+	objMusicControl.slowMusic = true  	
+} else {
+	objMusicControl.slowMusic = false	
+}

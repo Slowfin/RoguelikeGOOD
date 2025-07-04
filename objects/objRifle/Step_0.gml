@@ -6,7 +6,7 @@ if inInventory {
 	
 	if objPlayer.state = statesPlayer.dead or objPlayer.state = statesPlayer.teleport {
 		isActive = false	
-	} else if objPlayer.curSlot = gun {
+	} else if objPlayer.curGun = gun {
 		isActive = true	
 	}
 

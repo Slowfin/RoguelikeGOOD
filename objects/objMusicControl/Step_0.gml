@@ -1,3 +1,5 @@
+audio_sound_pitch(musicToPlay,pitch)	
+
 if keyboard_check_pressed(ord("K")) {
 	if global.muteMusic = false {
 	audio_group_set_gain(Music,0,200)
@@ -88,3 +90,8 @@ if global.music = noone {
 	audio_stop_sound(musShop)
 }
 
+if slowMusic {
+	pitch = lerp(pitch,0.5,0.1)
+} else {
+	pitch = lerp(pitch,1,0.1)
+}
