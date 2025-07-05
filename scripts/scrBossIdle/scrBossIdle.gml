@@ -2,6 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377
 function scrBossIdle(){
 	
+	scrBossNotDead()
 	path_end()	
 	
 	sprite_index = spIdle

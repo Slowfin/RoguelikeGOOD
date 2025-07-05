@@ -1,15 +1,15 @@
 // Ресурсы скриптов были изменены для версии 2.3.0, подробности см. по адресу
 // https://help.yoyogames.com/hc/en-us/articles/360005277377
-function scrBossNotDead(){
+function scrBossNotDead() {
 	
-	if place_meeting(x,y,objBulletPar) and canHurt {
+	if place_meeting(x,y,objBulletPar) {
 	with objBulletPar if place_meeting(x,y,objBoss1) and fire and canHit {
 	other.damageGot += global.fireDamage 
 	other.onFire = 3
 	other.alarm[5] = 60	
 	}
 	with objBulletPar if place_meeting(x,y,objBoss1) and canHit {
-		if object_index != objHotdogPluh {
+	if object_index != objHotdogPluh {
 	instance_destroy()	
 		}
 	other.damageGot += damage
@@ -21,9 +21,10 @@ function scrBossNotDead(){
 	audio_play_sound(sndHit,1,false,1,0,random_range(0.8,1.2))
 	other.statX = x
 	other.statY = y
+
 	}
-	
-}
+
+	}
 
 	if place_meeting(x,y,objPlayer) and objPlayer.hurtTime <= 0 and canHurt {
 	objPlayer.HP -= 1

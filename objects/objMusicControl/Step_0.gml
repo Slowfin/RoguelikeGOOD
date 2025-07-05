@@ -39,7 +39,7 @@ if global.music = "Area" {
 	}
 }
 if global.music = "Boss" {
-	if global.area = "grey" {
+	if global.area = "grey" or global.area = "green" {
 		audio_stop_sound(musBossDesert)
 		musicToPlay = musBoss
 	}

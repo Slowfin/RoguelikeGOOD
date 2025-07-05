@@ -1,3 +1,10 @@
+if fire {   
 with instance_create_layer(x,y,"Glow",objHotdogPluh) {
-	fire = other.fire	
+	fire = true
+}
+}
+else {   
+with instance_create_layer(x,y,"Glow",objHotdogPluh) {
+	fire = false
+}
 }

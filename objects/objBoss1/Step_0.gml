@@ -11,9 +11,7 @@ switch (state)
 	case statesBoss1.died: scrBossDied() break
 }
 
-if state != statesBoss1.died {
-	scrBossNotDead()	
-}
+
 
 if place_meeting(x,y,objWall) {
 	var dir = point_direction(x,y,objPlayer.x,objPlayer.y)

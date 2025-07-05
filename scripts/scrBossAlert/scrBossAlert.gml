@@ -2,6 +2,8 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377
 function scrBossAlert(){
 	
+
+	scrBossNotDead()	
 	randomize()
 	if objPlayer.state = statesPlayer.dead {
 		state = statesBoss1.idle

@@ -44,13 +44,19 @@ instance_destroy()
 
 if gun = "hotdog" {
 	var bulletsGun = instance_nearest(x,y,objHotdog) 
-var mouseDir = point_direction(bulletsGun.x,bulletsGun.y,mouse_x,mouse_y)
+var mouseDir = point_direction(objPlayer.x,objPlayer.y,mouse_x,mouse_y)
 speed = 4
 if x < bulletsGun.x {
-	image_yscale = -1	
+	image_angle = -45
+	aboba = 0
+}	else {
+	image_angle = 45
+	aboba = 1
 }
+
 direction = mouseDir
-image_angle = direction
+
+
 } else {
 	instance_destroy()	
 }
