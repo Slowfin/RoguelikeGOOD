@@ -11,8 +11,8 @@
   "name":"objBoss1bulletZ",
   "overriddenProperties":[],
   "parent":{
-    "name":"Enemies",
-    "path":"folders/Объекты/Enemies.yy",
+    "name":"Bullets",
+    "path":"folders/Объекты/Enemies/Bullets.yy",
   },
   "parentObjectId":{
     "name":"objEnemyBulletPar",

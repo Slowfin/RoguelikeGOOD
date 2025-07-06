@@ -1,10 +1,21 @@
 maxBullets = ceil(ogBullets * objPlayer.moreAmmo)
 
+mouseDir = point_direction(objPlayer.x,objPlayer.y,mouse_x,mouse_y)
+
+//для хотдога
+if object_index == objHotdog {
+if !reload {
+if instance_exists(objBulletHotdog) or bullets <= 0 {
+	image_index = 1	
+} else {
+	image_index = 0	
+} }  }
+
 if reload = true {
 	//image_angle += 18
-	sprite_index = sprGunReload
+	sprite_index = spriteReload
 } else {
-	sprite_index = sprGun
+	sprite_index = sprite
 }
 
 if inInventory {
@@ -16,6 +27,7 @@ if inInventory {
 	} else if objPlayer.curSlot = gun {
 		isActive = true	
 	}
+	
 
 
 if objPlayer.firstSlot != gun and objPlayer.secondSlot != gun {
@@ -26,18 +38,16 @@ if objPlayer.firstSlot != gun and objPlayer.secondSlot != gun {
 		y = objPlayer.y
 }
 
+
 if isActive == true {
 	fly = 0
 
-var mouseDir = point_direction(objPlayer.x,objPlayer.y,mouse_x,mouse_y)
 
-//if !reload {
 image_angle = mouseDir
-//}
 
 
-x = objPlayer.x + lengthdir_x(5 - shootKnockback,mouseDir)
-y = objPlayer.y - 6 + lengthdir_y(5 - shootKnockback,mouseDir) 
+x = objPlayer.x + lengthdir_x(offset - shootKnockback,mouseDir)
+y = objPlayer.y - 6 + lengthdir_y(offset - shootKnockback,mouseDir) 
 
 
 if mouse_x > objPlayer.x { 	
@@ -60,28 +70,15 @@ if bullets <= 0 and mouse_check_button_pressed(mb_left) and !reload {
 }
 
 if bullets > 0 and mouse_check_button(mb_left) and shootCd <= 0 and !reload {
-shootCd = maxShootCd / objPlayer.shootSpeed
-objCamera.alarm[0] = 5
-global.shakePower = 0.5
-with instance_create_layer(x + lengthdir_x(12,mouseDir),y + lengthdir_y(12,mouseDir),"Glow",objBulletParticle) { 
-	image_angle = other.image_angle
-	sprite_index = sprBulletParticle3
+if object_index == objPistol {
+	scrGunShoot()
+} else if object_index == objRifle {
+	scrRifleShoot()
+} else if object_index == objShotgun {
+	scrShotgunShoot()
+} else if object_index == objHotdog {
+	scrHotdogShoot()
 }
-	with instance_create_layer(x + lengthdir_x(8,mouseDir),y + lengthdir_y(8,mouseDir),"Bullets",objPistolBullet) {
-		gun = "pistol"
-		randomize()
-		var fireRandom = irandom_range(1,5)
-		if objPlayer.fireChanse >= fireRandom {
-			fire = true	
-		} else {
-			fire = false
-		}
-	}
-bullets -= 1
-shootKnockback = 2
-audio_play_sound(sndGunshot,1,false,1,0,random_range(0.9,1.1))
-alarm[1] = 5
-global.cantChange = 5
 }
 
 if shootCd > 0 {
@@ -93,21 +90,19 @@ var sound = reloadTime / objPlayer.reloadSpeed
 if bullets < maxBullets and keyboard_check_pressed(ord("R")) and reload == false {
 	reload = true
 	image_index = 0
-	sprite_index = sprGunReload
+	sprite_index = spriteReload
 	alarm[0] = ceil(sound)
-	alarm[2] = ceil(reloadTime / image_number -1)
-	audio_play_sound(sndReloadStart,1,false)
+	alarm[2] = ceil((reloadTime / objPlayer.reloadSpeed) / image_number -1)
+	audio_play_sound(soundReloadStart,1,false,1,relStartOffset)
 }
 
 if alarm[0] == ceil(sound / 2) {
-	audio_play_sound(sndReloadMiddle,1,false)
+	audio_play_sound(soundReloadMiddle,1,false,1,relMiddleOffset)
 }
 
 if alarm[0] == 15 {
-	audio_play_sound(sndReloadEnd,1,false)
+	audio_play_sound(soundReloadEnd,1,false,1,relEndOffset)
 }
-
-
 
 }
 
@@ -153,4 +148,3 @@ if shop == false {
 	mask_index = hitboxItemShop
 }
 }
-

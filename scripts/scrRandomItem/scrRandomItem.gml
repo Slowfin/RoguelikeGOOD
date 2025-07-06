@@ -3,7 +3,7 @@
 function scrRandomItem(){
 		
 		
-		randomItem = irandom(8)
+		randomItem = irandom(9)
 if randomItem == 0 {
 	randomItem = objEnergetic }
 if randomItem == 1 {

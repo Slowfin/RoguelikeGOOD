@@ -15,8 +15,8 @@
   "name":"objEnemy",
   "overriddenProperties":[],
   "parent":{
-    "name":"Enemies",
-    "path":"folders/Объекты/Enemies.yy",
+    "name":"ActualEnemies",
+    "path":"folders/Объекты/Enemies/ActualEnemies.yy",
   },
   "parentObjectId":{
     "name":"objEnemyPar",

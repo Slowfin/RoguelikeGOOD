@@ -6,7 +6,7 @@ global.floor = 1
 
 angle = -3
 angleType = 0
-
+alpha = 1
 
 tenseSpeed = 20
 tensePower = 0

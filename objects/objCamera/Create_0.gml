@@ -1,8 +1,8 @@
 camX = 1120
-camY = 632
+camY = 638
 move = false
 x = 1120
-y = 632
+y = 638
 camZoom = 1
 followPlayer = false
 spd = 0
@@ -11,3 +11,4 @@ randomize()
 
 yOffset = 0
 
+factor = 0.08

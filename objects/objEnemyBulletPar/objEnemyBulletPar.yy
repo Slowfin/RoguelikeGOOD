@@ -8,8 +8,8 @@
   "name":"objEnemyBulletPar",
   "overriddenProperties":[],
   "parent":{
-    "name":"Enemies",
-    "path":"folders/Объекты/Enemies.yy",
+    "name":"Bullets",
+    "path":"folders/Объекты/Enemies/Bullets.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -5,6 +5,8 @@ function scrPlayerDead(){
 	sprite_index = sprPlayerDead
 	hsp = 0
 	if deadTimer == 0 {
+		audio_stop_sound(sndScream)
+		audio_play_sound(sndScream,1,false,1,0.05,random_range(0.95,1.05))
 		vsp = - 3
 		image_alpha = 1
 	}

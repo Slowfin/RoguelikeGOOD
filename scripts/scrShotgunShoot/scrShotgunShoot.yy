@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scrShotgunShoot",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrShotgunShoot",
+  "parent":{
+    "name":"Shotgun",
+    "path":"folders/Скрипты/Guns/Shotgun.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

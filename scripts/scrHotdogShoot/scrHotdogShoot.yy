@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scrHotdogShoot",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrHotdogShoot",
+  "parent":{
+    "name":"Hotdog",
+    "path":"folders/Скрипты/Guns/Hotdog.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

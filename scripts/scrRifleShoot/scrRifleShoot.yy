@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scrRifleShoot",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrRifleShoot",
+  "parent":{
+    "name":"Rifle",
+    "path":"folders/Скрипты/Guns/Rifle.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

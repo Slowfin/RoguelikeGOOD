@@ -2,6 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377
 function scrBossNotDead() {
 	
+	if canHurt {
 	if place_meeting(x,y,objBulletPar) {
 	with objBulletPar if (place_meeting(x,y,objBoss1) and fire and canHit) or (other.getHit and fire) {
 	other.damageGot += global.fireDamage 
@@ -21,8 +22,8 @@ function scrBossNotDead() {
 	audio_play_sound(sndHit,1,false,1,0,random_range(0.8,1.2))
 	other.statX = x
 	other.statY = y
-
-	}
+	} }
+	
 if getHit {
 	getHit = false
 	}
@@ -33,12 +34,6 @@ if getHit {
 	global.shakePower = 2
 	objCamera.alarm[0] = 5
 	objPlayer.hurtTime = objPlayer.baseHurtTime
-			if objPlayer.HP > 0 {
-			audio_stop_sound(sndHitPlayer)	
-			audio_play_sound(sndHitPlayer,10,false)	
-		} else {
-			audio_play_sound(sndScream,10,false)
-		}
 }
 
 	if !place_meeting(x,y,objBulletPar) and noDamage < 60 {

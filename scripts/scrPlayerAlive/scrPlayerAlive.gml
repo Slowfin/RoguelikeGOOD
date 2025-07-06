@@ -10,6 +10,12 @@ key_down = keyboard_check(vk_down) or keyboard_check(ord("S"))
 key_equip = keyboard_check_pressed(ord("E"))
 
 
+if objPlayer.hurtTime = objPlayer.baseHurtTime
+			if objPlayer.HP > 0 {
+			audio_stop_sound(sndHitPlayer)	
+			audio_play_sound(sndHitPlayer,10,false,1,0,random_range(0.9,1.1))	
+		} 
+
 if canMove {
 hsp = (key_right - key_left) * sp
 vsp = (key_down - key_up) * sp

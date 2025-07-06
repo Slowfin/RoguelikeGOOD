@@ -1,6 +1,7 @@
 numb += 0.09
 y+=sin(numb)*0.2
 
+if objPlayer.state != states.died {
 if distance_to_object(objPlayer) < 50 {
 	follow = true
 	
@@ -15,6 +16,7 @@ if distance_to_object(objPlayer) < 50 {
 		objPlayer.money += 1
 		audio_play_sound(sndCoin,1,false,1,0,random_range(0.95,1.05))
 	}
+}
 	
 image_xscale = lerp(image_xscale  ,1,0.2)
 image_yscale = lerp(image_yscale  ,1,0.2)

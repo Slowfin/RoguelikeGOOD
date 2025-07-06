@@ -1,5 +1,9 @@
 depth = -9999
 
+if alpha > 0 {
+alpha = lerp(alpha,0,0.05)	
+}
+
 if objPlayer.HP == 5 {
 	tenseSpeed = 20
 	tensePower = 0	

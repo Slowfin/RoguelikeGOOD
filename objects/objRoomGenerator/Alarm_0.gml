@@ -1,5 +1,3 @@
-	objPlayer.x = 1280
-	objPlayer.y = 728
 	with objWall {
 	instance_destroy()	
 	}
@@ -31,6 +29,7 @@
 	instance_destroy()
 	}
 	
+	objGame.alpha = 1
 	global.bossDefeated = false
 	global.music = "Area"
 	var oldArea = global.area
@@ -51,6 +50,9 @@
 	scrCreateRoom()
 	objGame.alarm[2] = 20
 	
+	if global.bossDefeated {
+	objPlayer.x = 1280
+	objPlayer.y = 728
 	objPlayer.state = statesPlayer.alive
 	objPlayer.image_xscale = 1
 	objPlayer.image_yscale = 1
@@ -58,6 +60,10 @@
 	global.floor += 1
 	objPlayer.rotateTp = -5
 	objCamera.x = 1120
-	objCamera.y = 635
+	objCamera.y = 638
+	objCamera.factor = 0
+	objCamera.alarm[1] = 5
+	
 	camera_set_view_pos(view_camera[0],1120,635)
 	audio_stop_sound(musArea)
+	}
