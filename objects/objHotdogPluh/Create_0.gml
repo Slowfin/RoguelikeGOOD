@@ -1,12 +1,17 @@
 canHit = true
 fire = true
 damage = objHotdog.damage
-audio_play_sound(sndPluh,1,false)
+audio_play_sound(sndPluh,1,false,1,0,random_range(0.80,1.20))
 global.shakePower = 1
 objCamera.alarm[0] = 5
 alarm[0] = 1
 
-
+ if place_meeting(x,y,objBoss1) and canHit   {
+	with objBoss1 if place_meeting(x,y,objHotdogPluh) {
+		getHit = true	
+	}
+ }
+ 
 //if place_meeting(x,y,objEnemyPar) {
 //	if fire {
 //	with objEnemyPar if place_meeting(x,y,objHotdogPluh) {
@@ -26,3 +31,4 @@ alarm[0] = 1
 //	statY = y
 //	}
 //}
+  

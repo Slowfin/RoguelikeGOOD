@@ -1,9 +1,17 @@
 maxBullets = ceil(ogBullets * objPlayer.moreAmmo)
 
-if instance_exists(objBulletHotdog) {
+if !reload {
+if instance_exists(objBulletHotdog) or bullets <= 0 {
 	image_index = 1	
 } else {
 	image_index = 0	
+} }
+
+if reload = true {
+	//image_angle += 18
+	sprite_index = sprHotdogReload
+} else {
+	sprite_index = sprHotdog
 }
 
 if inInventory {
@@ -29,9 +37,9 @@ if isActive == true {
 
 var mouseDir = point_direction(objPlayer.x,objPlayer.y,mouse_x,mouse_y)
 
-if !reload {
+//if !reload {
 image_angle = mouseDir
-}
+//}
 
 
 x = objPlayer.x + lengthdir_x(5 - shootKnockback,mouseDir)
@@ -61,9 +69,9 @@ if bullets > 0 and mouse_check_button(mb_left) and shootCd <= 0 and !reload {
 shootCd = maxShootCd / objPlayer.shootSpeed
 objCamera.alarm[0] = 5
 global.shakePower = 0.25
-with instance_create_layer(x + lengthdir_x(19,mouseDir),y + lengthdir_y(19,mouseDir),"Glow",objBulletParticle) { 
+with instance_create_layer(x + lengthdir_x(14,mouseDir),y + lengthdir_y(14,mouseDir),"Glow",objBulletParticle) { 
 	image_angle = other.image_angle
-	sprite_index = sprBulletParticle3
+	sprite_index = sprBulletParticle4
 }
 	with instance_create_layer(x + lengthdir_x(8,mouseDir),y + lengthdir_y(8,mouseDir),"Player",objBulletHotdog) {
 		gun = "hotdog"
@@ -78,7 +86,7 @@ with instance_create_layer(x + lengthdir_x(19,mouseDir),y + lengthdir_y(19,mouse
 bullets -= 1
 shootKnockback = 2
 audio_play_sound(sndWoosh2,1,false,1,0,random_range(0.9,1.1))
-alarm[1] = 5
+alarm[1] = 10
 global.cantChange = 5
 }
 
@@ -90,7 +98,10 @@ var sound = reloadTime / objPlayer.reloadSpeed
 
 if bullets < maxBullets and keyboard_check_pressed(ord("R")) and reload == false {
 	reload = true
+	image_index = 0
+	sprite_index = sprHotdogReload
 	alarm[0] = ceil(sound)
+	alarm[2] = ceil(reloadTime / image_number -1)
 	audio_play_sound(sndReloadStart,1,false)
 }
 
@@ -102,9 +113,9 @@ if alarm[0] == 15 {
 	audio_play_sound(sndReloadEnd,1,false)
 }
 
-if reload = true {
-	image_angle += 18
-}
+//if reload = true {
+//	image_angle += 18
+//}
 
 
 

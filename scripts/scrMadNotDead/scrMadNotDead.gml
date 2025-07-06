@@ -21,7 +21,6 @@ function scrMadNotDead(){
 	audio_play_sound(sndHit,1,false,1,0,random_range(0.8,1.2))
 	other.statX = x
 	other.statY = y
-	canHit = false
 	}
 
 }

@@ -7,6 +7,7 @@ white = false
 yoffset = 25
 MaxHP = 600
 HP = MaxHP
+getHit = false
 deadTimer = 0
 alert = false
 alertDis = 300

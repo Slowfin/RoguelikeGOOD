@@ -3,12 +3,12 @@
 function scrBossNotDead() {
 	
 	if place_meeting(x,y,objBulletPar) {
-	with objBulletPar if place_meeting(x,y,objBoss1) and fire and canHit {
+	with objBulletPar if (place_meeting(x,y,objBoss1) and fire and canHit) or (other.getHit and fire) {
 	other.damageGot += global.fireDamage 
 	other.onFire = 3
 	other.alarm[5] = 60	
 	}
-	with objBulletPar if place_meeting(x,y,objBoss1) and canHit {
+	with objBulletPar if (place_meeting(x,y,objBoss1) and canHit) or other.getHit {
 	if object_index != objHotdogPluh {
 	instance_destroy()	
 		}
@@ -23,7 +23,9 @@ function scrBossNotDead() {
 	other.statY = y
 
 	}
-
+if getHit {
+	getHit = false
+	}
 	}
 
 	if place_meeting(x,y,objPlayer) and objPlayer.hurtTime <= 0 and canHurt {

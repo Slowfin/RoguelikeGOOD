@@ -46,8 +46,8 @@
   },
   "origin":9,
   "parent":{
-    "name":"Guns",
-    "path":"folders/Спрайты/Guns.yy",
+    "name":"Shotgun",
+    "path":"folders/Спрайты/Guns/Shotgun.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

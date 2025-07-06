@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"musBossJungle",
+  "audioGroupId":{
+    "name":"Music",
+    "path":"audiogroups/Music",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":56.80197,
+  "name":"musBossJungle",
+  "parent":{
+    "name":"Звуки",
+    "path":"folders/Звуки.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"musBossJungle.ogg",
+  "type":1,
+  "volume":1.0,
+}

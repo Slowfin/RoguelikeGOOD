@@ -11,9 +11,6 @@ if place_meeting(x,y,objPlayer)  and objPlayer.state != statesPlayer.dead  {
 		}
 }	
 
-if place_meeting(x,y,objPlayer) and global.bossDefeated == false and global.music != "Boss" {
-	global.music = "Boss"
-}
 
 if global.bossDefeated and !instance_exists(objPortal) {
 		instance_create_layer(bossx,bossy,"Glow",objPortal)

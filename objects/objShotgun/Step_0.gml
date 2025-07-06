@@ -1,5 +1,12 @@
 maxBullets = ceil(ogBullets * objPlayer.moreAmmo)
 
+if reload = true {
+	//image_angle += 18
+	sprite_index = sprShotgunReload
+} else {
+	sprite_index = sprShotgun
+}
+
 if inInventory {
 	outline = false
 	shop = false
@@ -26,9 +33,9 @@ if isActive {
 var mouseDir = point_direction(objPlayer.x,objPlayer.y,mouse_x,mouse_y)
 var mouseDirSelf = point_direction(x,y,mouse_x,mouse_y)
 
-if !reload {
+//if !reload {
 image_angle = mouseDir
-}
+//}
 
 
 x = objPlayer.x + lengthdir_x(5 - shootKnockback,mouseDir)
@@ -89,7 +96,10 @@ var sound = reloadTime / objPlayer.reloadSpeed
 
 if bullets < maxBullets and keyboard_check_pressed(ord("R")) and reload == false {
 	reload = true
+	image_index = 0
+	sprite_index = sprShotgunReload
 	alarm[0] = ceil(sound)
+	alarm[2] = ceil(reloadTime / image_number -1)
 	audio_play_sound(sndReloadStart,1,false)
 }
 

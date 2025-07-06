@@ -27,8 +27,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"Guns",
-    "path":"folders/Спрайты/Guns.yy",
+    "name":"HotDog",
+    "path":"folders/Спрайты/Guns/HotDog.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
