@@ -111,11 +111,6 @@ if alarm[0] == 15 {
 	audio_play_sound(sndReloadEnd,1,false)
 }
 
-if reload = true {
-	image_angle += 12
-}
-
-
 
 
 }

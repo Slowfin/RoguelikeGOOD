@@ -2,7 +2,7 @@ maxBullets = ceil(ogBullets * objPlayer.moreAmmo)
 
 if reload = true {
 	//image_angle += 18
-	sprite_index = sprRifle
+	sprite_index = sprRifleReloading
 } else {
 	sprite_index = sprRifle
 }
@@ -92,7 +92,7 @@ var sound = reloadTime / objPlayer.reloadSpeed
 if bullets < maxBullets and keyboard_check_pressed(ord("R")) and reload == false {
 	reload = true
 	image_index = 0
-	sprite_index = sprRifle
+	sprite_index = sprRifleReloading
 	alarm[2] = ceil(reloadTime / image_number -1)
 	alarm[0] = ceil(sound)
 	audio_play_sound(sndReloadStart,1,false)
@@ -106,9 +106,7 @@ if alarm[0] == 15 {
 	audio_play_sound(sndReloadEnd,1,false)
 }
 
-if reload = true {
-	image_angle += 18
-}
+
 
 
 

@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"musArea.ogg",
   "type":1,
-  "volume":0.54,
+  "volume":0.36,
 }

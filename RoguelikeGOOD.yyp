@@ -289,6 +289,7 @@
     {"id":{"name":"sprPortralClose","path":"sprites/sprPortralClose/sprPortralClose.yy",},},
     {"id":{"name":"sprPressSpace","path":"sprites/sprPressSpace/sprPressSpace.yy",},},
     {"id":{"name":"sprRifle","path":"sprites/sprRifle/sprRifle.yy",},},
+    {"id":{"name":"sprRifleReloading","path":"sprites/sprRifleReloading/sprRifleReloading.yy",},},
     {"id":{"name":"sprRoomBoss","path":"sprites/sprRoomBoss/sprRoomBoss.yy",},},
     {"id":{"name":"sprRoomLimit","path":"sprites/sprRoomLimit/sprRoomLimit.yy",},},
     {"id":{"name":"sprRoomMob","path":"sprites/sprRoomMob/sprRoomMob.yy",},},
