@@ -39,6 +39,8 @@ canHurt = true
 coinDrop = irandom_range(30,50)
 
 onFire = 0
+fireDamage = 5
+hitBy = ds_list_create()
 
 whiteX = 100
 

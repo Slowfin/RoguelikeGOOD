@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scrFlamethrowerShoot",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrFlamethrowerShoot",
+  "parent":{
+    "name":"Flamethrower",
+    "path":"folders/Скрипты/Guns/Flamethrower.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

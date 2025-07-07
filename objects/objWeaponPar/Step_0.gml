@@ -78,6 +78,8 @@ if object_index == objPistol {
 	scrShotgunShoot()
 } else if object_index == objHotdog {
 	scrHotdogShoot()
+} else if object_index == objFlamethrower {
+	scrFlamethrowerShoot()
 }
 }
 

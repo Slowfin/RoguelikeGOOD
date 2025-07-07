@@ -50,7 +50,7 @@
 	scrCreateRoom()
 	objGame.alarm[2] = 20
 	
-	if global.bossDefeated {
+	if objPlayer.state == statesPlayer.teleport {
 	objPlayer.x = 1280
 	objPlayer.y = 728
 	objPlayer.state = statesPlayer.alive

@@ -3,7 +3,7 @@
 function scrRandomItem(){
 		
 		
-		randomItem = irandom(9)
+		randomItem = irandom(10)
 if randomItem == 0 {
 	randomItem = objEnergetic }
 if randomItem == 1 {
@@ -24,6 +24,7 @@ if randomItem == 8 {
 	randomItem = objBelt }
 if randomItem == 9 {
 	randomItem = objHotdog }
-		
+if randomItem == 10 {
+	randomItem = objFlamethrower }		
 		
 }

@@ -59,8 +59,11 @@ if global.music = "BossEnd" {
 	if global.area == "green" {
 		musicToPlay = musBossEndJungle
 	}
-	else {
+	else if global.area == "grey"{
 		musicToPlay = musBossEnd
+	}
+	else if global.area == "desert"{
+		musicToPlay = musBossEndDesert
 	}
 }
 if global.music = "Shop" {

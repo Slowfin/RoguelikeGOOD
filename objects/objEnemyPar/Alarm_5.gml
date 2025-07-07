@@ -1,7 +1,7 @@
 if onFire > 0 {
 damageGot += global.fireDamage
-HP -= 3
-alarm[3] = 60
+HP -= global.fireDamage
+alarm[5] = 60
  onFire -= 1
  noDamage = 0
 white = true

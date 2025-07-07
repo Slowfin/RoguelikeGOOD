@@ -6,8 +6,8 @@ global.shakePower = 1
 objCamera.alarm[0] = 5
 alarm[0] = 1
 
- if place_meeting(x,y,objBoss1) and canHit   {
-	with objBoss1 if place_meeting(x,y,objHotdogPluh) {
+ if place_meeting(x,y,objEnemyPar) {
+	with objEnemyPar if place_meeting(x,y,objHotdogPluh) {
 		getHit = true	
 	}
  }

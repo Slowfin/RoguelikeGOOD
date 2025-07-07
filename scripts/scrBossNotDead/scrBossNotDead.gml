@@ -2,32 +2,34 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377
 function scrBossNotDead() {
 	
-	if canHurt {
-	if place_meeting(x,y,objBulletPar) {
-	with objBulletPar if (place_meeting(x,y,objBoss1) and fire and canHit) or (other.getHit and fire) {
-	other.damageGot += global.fireDamage 
-	other.onFire = 3
-	other.alarm[5] = 60	
-	}
-	with objBulletPar if (place_meeting(x,y,objBoss1) and canHit) or other.getHit {
-	if object_index != objHotdogPluh {
-	instance_destroy()	
-		}
-	other.damageGot += damage
-	other.HP -= damage
-	other.noDamage = 0
-	other.white = true
-	other.alarm[0] = 5
-	other.yoffset = 15
-	audio_play_sound(sndHit,1,false,1,0,random_range(0.8,1.2))
-	other.statX = x
-	other.statY = y
-	} }
+	//if canHurt {
+	//if place_meeting(x,y,objBulletPar) {
+	//with objBulletPar if (place_meeting(x,y,objBoss1) and fire and canHit) or (other.getHit and fire) {
+	//if other.onFire <= 0 {
+	//other.alarm[5] = 60
+	//}
+	//other.onFire = 3
+	//}
+	//if getHit or other.canHit {
+	//	with objBulletPar {
+	//if object_index != objHotdogPluh and object_index != objFlamethrowerBullet {
+	//instance_destroy()	
+	//	} }
+	//damageGot += 1
+	//HP -= 1
+	//noDamage = 0
+	//white = true
+	//alarm[0] = 5
+	//yoffset = 15
+	//audio_play_sound(sndHit,1,false,1,0,random_range(0.8,1.2))
+	//statX = x
+	//statY = y
 	
-if getHit {
-	getHit = false
-	}
-	}
+	//} }
+
+
+scrAllEnemyGetDamage()
+	
 
 	if place_meeting(x,y,objPlayer) and objPlayer.hurtTime <= 0 and canHurt {
 	objPlayer.HP -= 1

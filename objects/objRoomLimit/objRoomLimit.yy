@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprRoomLimit",
-    "path":"sprites/sprRoomLimit/sprRoomLimit.yy",
+    "name":"sprRoomLimit_1",
+    "path":"sprites/sprRoomLimit_1/sprRoomLimit_1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -13,8 +13,11 @@ sp = 0.8
 path = path_add() 
 coinDrop = irandom_range(3,5)
 getHit =  false
+canHurt = true
 
 onFire = 0
+fireDamage = 3
+hitBy = ds_list_create()
 
 
 	statX = x

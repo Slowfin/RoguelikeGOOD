@@ -12,8 +12,12 @@ attackDis = 8
 sp = 1
 path = path_add() 
 coinDrop = 0
+getHit =  false
+canHurt = true
 
 onFire = 0
+fireDamage = 3
+hitBy = ds_list_create()
 
 	statX = x
 	statY = y
