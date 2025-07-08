@@ -1,6 +1,6 @@
 gun = "flamethrower"
 
-ogBullets = 150
+ogBullets = 120
 maxBullets = ceil(ogBullets * objPlayer.moreAmmo)
 bullets = maxBullets
 shootCd = 0

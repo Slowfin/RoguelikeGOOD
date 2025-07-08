@@ -18,6 +18,12 @@ if reload = true {
 	sprite_index = sprite
 }
 
+if !inInventory {
+	reload	= false
+	alarm[0] = 0
+	alarm[2] = 0
+}
+
 if inInventory {
 	outline = false
 	shop = false
@@ -98,13 +104,17 @@ if bullets < maxBullets and keyboard_check_pressed(ord("R")) and reload == false
 	audio_play_sound(soundReloadStart,1,false,1,relStartOffset)
 }
 
+if reload {
 if alarm[0] == ceil(sound / 2) {
 	audio_play_sound(soundReloadMiddle,1,false,1,relMiddleOffset)
 }
 
 if alarm[0] == 15 {
 	audio_play_sound(soundReloadEnd,1,false,1,relEndOffset)
-}
+} } else {
+	alarm[0] = 0
+	sprite_index = sprite
+}	
 
 }
 

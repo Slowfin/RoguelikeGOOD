@@ -1,6 +1,6 @@
 randomize()
 
-
+global.music = "Boss"	
 
 switch (state)
 {

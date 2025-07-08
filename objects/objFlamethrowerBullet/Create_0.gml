@@ -21,7 +21,7 @@ if gun = "flamethrower" {
 	var bulletsGun = instance_nearest(x,y,objFlamethrower) 
 var mouseDir = point_direction(bulletsGun.x,bulletsGun.y,mouse_x,mouse_y)
 speed = 3 + objPlayer.bulletSpeed
-direction = objFlamethrower.image_angle + (random_range(-15,15) /objPlayer.lessSpread)
+direction = objFlamethrower.image_angle + (random_range(-20,20) /objPlayer.lessSpread)
 image_angle = direction
 damage = objFlamethrower.damage
 } else {
