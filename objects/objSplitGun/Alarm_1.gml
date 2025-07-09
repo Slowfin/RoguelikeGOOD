@@ -1,0 +1,1 @@
+shootKnockback = 0

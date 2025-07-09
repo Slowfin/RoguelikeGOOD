@@ -2,6 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377
 function scrAllEnemyGetDamage(){
 
+if canHurt {
 with objBulletPar if place_meeting(x,y,other) {
 	if object_index != objHotdogPluh and object_index != objFlamethrowerBullet {
 		other.getHit = true
@@ -25,6 +26,6 @@ if getHit and canHurt {
 	statX = x
 	statY = y
 	getHit = false
-	} } } 
+	} } } }
 
 }

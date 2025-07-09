@@ -4,6 +4,9 @@ function scrBossDied(){
 	
 	path_end()	
 	
+	if global.music = "Boss" {
+	global.music = "BossEnd"
+	}
 	
 	image_speed = 1
 	speed = 0

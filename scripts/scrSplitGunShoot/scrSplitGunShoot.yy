@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scrSplitGunShoot",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrSplitGunShoot",
+  "parent":{
+    "name":"SplitGun",
+    "path":"folders/Скрипты/Guns/SplitGun.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,6 +1,7 @@
 fire = false
 gun = objPlayer.curGun
 canHit = true
+alarm[0] = 300
 
 spawnX = x
 spawnY = y

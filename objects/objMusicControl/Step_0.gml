@@ -57,12 +57,15 @@ if global.music == "Boss" {
 }
 if global.music = "BossEnd" {
 	if global.area == "green" {
+		audio_stop_sound(musBossJungle)
 		musicToPlay = musBossEndJungle
 	}
 	else if global.area == "grey"{
+		audio_stop_sound(musBoss)
 		musicToPlay = musBossEnd
 	}
 	else if global.area == "desert"{
+		audio_stop_sound(musBossDesert)
 		musicToPlay = musBossEndDesert
 	}
 }
