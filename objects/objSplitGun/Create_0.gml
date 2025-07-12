@@ -22,11 +22,14 @@ outline = false
 cost = 30 + irandom_range(-3,3)
 fly = 0
 
+shoot = false
+
 offset = 5
 particleOffset = 18
 bulletOffset = 14
 sprite = sprSplitGun
-spriteReload = sprSplitGun
+spriteShoot = sprSplitGunShoot
+spriteReload = sprSplitGunReload
 spriteParticle = sprBulletParticle5
 soundReloadStart = sndReloadStart
 soundReloadMiddle = sndReloadMiddle

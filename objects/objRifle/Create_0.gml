@@ -20,10 +20,13 @@ outline = false
 cost = 40 + irandom_range(-3,3)
 fly = 0
 
+shoot = false
+
 offset = 5
 particleOffset = 19
 bulletOffset = 8
 sprite = sprRifle
+spriteShoot = sprRifleShoot
 spriteReload = sprRifleReloading
 spriteParticle = sprBulletParticle3
 soundReloadStart = sndReloadStart

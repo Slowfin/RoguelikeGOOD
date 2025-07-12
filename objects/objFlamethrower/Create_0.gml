@@ -20,11 +20,14 @@ outline = false
 cost = 60 + irandom_range(-3,3)
 fly = 0
 
+shoot = false
+
 offset = 5
 particleOffset = 23
 bulletOffset = 25
 
 sprite = sprFlamethrower
+spriteShoot = sprFlamethrower
 spriteReload = sprFlamethrowerReload
 spriteParticle = noone
 

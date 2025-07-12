@@ -2,20 +2,24 @@ maxBullets = ceil(ogBullets * objPlayer.moreAmmo)
 
 mouseDir = point_direction(objPlayer.x,objPlayer.y,mouse_x,mouse_y)
 
+
 //для хотдога
 if object_index == objHotdog {
 if !reload {
 if instance_exists(objBulletHotdog) or bullets <= 0 {
 	image_index = 1	
-} else {
+} else if !shoot {
 	image_index = 0	
 } }  }
 
 if reload = true {
-	//image_angle += 18
 	sprite_index = spriteReload
-} else {
-	sprite_index = sprite
+} 
+
+
+
+if sprite_index == spriteShoot and image_index > image_number -1 {
+	shoot = false	
 }
 
 if !inInventory {
@@ -48,6 +52,12 @@ if objPlayer.firstSlot != gun and objPlayer.secondSlot != gun {
 if isActive == true {
 	fly = 0
 
+	if reload = false {
+ if !shoot {
+	sprite_index = sprite
+} else if shoot {
+	sprite_index = spriteShoot
+} }
 
 image_angle = mouseDir
 
@@ -76,6 +86,8 @@ if bullets <= 0 and mouse_check_button_pressed(mb_left) and !reload {
 }
 
 if bullets > 0 and mouse_check_button(mb_left) and shootCd <= 0 and !reload {
+	shoot = true
+	image_index = 0
 if object_index == objPistol {
 	scrGunShoot()
 } else if object_index == objRifle {
@@ -99,6 +111,7 @@ var sound = reloadTime / objPlayer.reloadSpeed
 
 if bullets < maxBullets and keyboard_check_pressed(ord("R")) and reload == false {
 	reload = true
+	shoot = false
 	image_index = 0
 	sprite_index = spriteReload
 	alarm[0] = ceil(sound)
@@ -115,7 +128,6 @@ if alarm[0] == 15 {
 	audio_play_sound(soundReloadEnd,1,false,1,relEndOffset)
 } } else {
 	alarm[0] = 0
-	sprite_index = sprite
 }	
 
 }

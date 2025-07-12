@@ -20,10 +20,13 @@ outline = false
 cost = 40 + irandom_range(-3,3)
 fly = 0
 
+shoot = false
+
 offset = 5
 particleOffset = 14
 bulletOffset = 8
 sprite = sprHotdog
+spriteShoot = sprHotdog
 spriteReload = sprHotdogReload
 spriteParticle = sprBulletParticle4
 soundReloadStart = sndWoosh4
